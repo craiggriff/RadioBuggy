@@ -5,7 +5,8 @@ Complete Game.
 
 In the windows Store :
 
-	https://www.microsoft.com/store/apps/9NBLGGH5FTNJ
+[Link to the Game Here](https://www.microsoft.com/store/apps/9NBLGGH5FTNJ)
+	
   
   
 

@@ -289,7 +289,7 @@ void DirectXPage::SmallEverything() // for low rez phones
 		CoreDispatcherPriority::Normal,
 		ref new DispatchedHandler([this]()
 	{
-
+		/*
 		GameTitle->FontSize=39;
 		button_right->Width = 60;
 		button_right->Height = 60;
@@ -312,7 +312,7 @@ void DirectXPage::SmallEverything() // for low rez phones
 
 		left_buttons->Height = 280;
 		left_buttons->Width = 60;
-		
+		*/
 		//names_list->Height = 220;
 			//button_respot->Height
 	})
@@ -329,13 +329,13 @@ void DirectXPage::SetScreenControls(int mode)
 	{
 		if (mode == 1)
 		{
-			left_buttons->Visibility = Windows::UI::Xaml::Visibility::Visible;
-			right_buttons->Visibility = Windows::UI::Xaml::Visibility::Visible;
+			//left_buttons->Visibility = Windows::UI::Xaml::Visibility::Visible;
+			//right_buttons->Visibility = Windows::UI::Xaml::Visibility::Visible;
 		}
 		else
 		{
-			left_buttons->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
-			right_buttons->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+			//left_buttons->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+			//right_buttons->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
 		}
 	})
 		);
@@ -682,8 +682,8 @@ void DirectXPage::SetEditMode()
 		CoreDispatcherPriority::Normal,
 		ref new DispatchedHandler([this]()
 	{
-		right_chooser->Visibility = Windows::UI::Xaml::Visibility::Visible;
-		right_buttons->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+		//right_chooser->Visibility = Windows::UI::Xaml::Visibility::Visible;
+		//right_buttons->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
 		//names_list->ItemsSource = Players;
 	}));
 }
@@ -1090,7 +1090,7 @@ void Simple3DGame::DirectXPage::button_up_PointerPressed(Platform::Object^ sende
 //	float pointy = point->RawPosition.Y;
 //	float pointx = point->RawPosition.X;
 
-	button_up->Opacity = 0.7f;
+	//button_up->Opacity = 0.7f;
 }
 
 
@@ -1101,7 +1101,7 @@ void Simple3DGame::DirectXPage::button_up_PointerReleased(Platform::Object^ send
 	//Windows::UI::Input::PointerPoint^ point = e->GetCurrentPoint((Windows::UI::Xaml::UIElement^)sender);
 	//m_main->m_sceneRenderer->SetSpeedPos(140.0f - point->RawPosition.Y);
 
-	button_up->Opacity = 0.2f;
+	//button_up->Opacity = 0.2f;
 }
 
 void Simple3DGame::DirectXPage::button_up_PointerMoved(Platform::Object^ sender, Windows::UI::Xaml::Input::PointerRoutedEventArgs^ e)
@@ -1116,42 +1116,42 @@ void Simple3DGame::DirectXPage::button_up_PointerMoved(Platform::Object^ sender,
 void Simple3DGame::DirectXPage::button_down_PointerPressed(Platform::Object^ sender, Windows::UI::Xaml::Input::PointerRoutedEventArgs^ e)
 {
 	m_main->GetMoveLook()->KeyDown(true);
-	button_down->Opacity = 0.7f;
+	//button_down->Opacity = 0.7f;
 }
 
 
 void Simple3DGame::DirectXPage::button_down_PointerReleased(Platform::Object^ sender, Windows::UI::Xaml::Input::PointerRoutedEventArgs^ e)
 {
 	m_main->GetMoveLook()->KeyDown(false);
-	button_down->Opacity = 0.2f;
+	//button_down->Opacity = 0.2f;
 }
 
 
 void Simple3DGame::DirectXPage::button_left_PointerPressed(Platform::Object^ sender, Windows::UI::Xaml::Input::PointerRoutedEventArgs^ e)
 {
 	m_main->GetMoveLook()->KeyLeft(true);
-	button_left->Opacity = 0.7f;
+	//button_left->Opacity = 0.7f;
 }
 
 
 void Simple3DGame::DirectXPage::button_left_PointerReleased(Platform::Object^ sender, Windows::UI::Xaml::Input::PointerRoutedEventArgs^ e)
 {
 	m_main->GetMoveLook()->KeyLeft(false);
-	button_left->Opacity = 0.2f;
+	//button_left->Opacity = 0.2f;
 }
 
 
 void Simple3DGame::DirectXPage::button_right_PointerPressed(Platform::Object^ sender, Windows::UI::Xaml::Input::PointerRoutedEventArgs^ e)
 {
 	m_main->GetMoveLook()->KeyRight(true);
-	button_right->Opacity = 0.7f;
+	//button_right->Opacity = 0.7f;
 }
 
 
 void Simple3DGame::DirectXPage::button_right_PointerReleased(Platform::Object^ sender, Windows::UI::Xaml::Input::PointerRoutedEventArgs^ e)
 {
 	m_main->GetMoveLook()->KeyRight(false);
-	button_right->Opacity = 0.2f;
+	//button_right->Opacity = 0.2f;
 }
 
 
@@ -1282,20 +1282,20 @@ void Simple3DGame::DirectXPage::button_respot_PointerEntered(Platform::Object^ s
 void Simple3DGame::DirectXPage::button_grab_PointerPressed(Platform::Object^ sender, Windows::UI::Xaml::Input::PointerRoutedEventArgs^ e)
 {
 	m_main->m_sceneRenderer->GetStage()->m_Banana->GrabPressed();
-	button_grab->Opacity = 0.7f;
+	//button_grab->Opacity = 0.7f;
 }
 
 
 void Simple3DGame::DirectXPage::button_grab_PointerReleased(Platform::Object^ sender, Windows::UI::Xaml::Input::PointerRoutedEventArgs^ e)
 {
 	m_main->m_sceneRenderer->GetStage()->m_Banana->Grabreleased();
-	button_grab->Opacity = 0.2f;
+	//button_grab->Opacity = 0.2f;
 }
 
 
 void Simple3DGame::DirectXPage::button_ab_PointerPressed(Platform::Object^ sender, Windows::UI::Xaml::Input::PointerRoutedEventArgs^ e)
 {
-	button_ab->Opacity = 0.7f;
+	//button_ab->Opacity = 0.7f;
 	//m_main->m_sceneRenderer->GetStage()->m_Banana->ABPressed();
 	m_main->GetMoveLook()->KeyFast(true);
 }
@@ -1303,7 +1303,7 @@ void Simple3DGame::DirectXPage::button_ab_PointerPressed(Platform::Object^ sende
 
 void Simple3DGame::DirectXPage::button_ab_PointerReleased(Platform::Object^ sender, Windows::UI::Xaml::Input::PointerRoutedEventArgs^ e)
 {
-	button_ab->Opacity = 0.2f;
+	//button_ab->Opacity = 0.2f;
 	m_main->GetMoveLook()->KeyFast(false);
 	//m_main->m_sceneRenderer->GetStage()->m_Banana->ABReleased();
 }
@@ -1757,7 +1757,7 @@ void Simple3DGame::DirectXPage::items_list_SelectionChanged(Platform::Object^ se
 		m_main->m_sceneRenderer->GetStage()->bDesignMode = false;
 
 		right_chooser->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
-		right_buttons->Visibility = Windows::UI::Xaml::Visibility::Visible;
+		//right_buttons->Visibility = Windows::UI::Xaml::Visibility::Visible;
 
 		m_main->m_sceneRenderer->GetStage()->m_Fruit->bDesignMode = false;
 		m_main->m_sceneRenderer->GetStage()->m_Statics->bDesignPointer = false;

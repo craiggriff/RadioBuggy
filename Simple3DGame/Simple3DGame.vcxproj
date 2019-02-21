@@ -117,8 +117,8 @@
   <PropertyGroup>
     <PackageCertificateKeyFile>Drizzle_StoreKey.pfx</PackageCertificateKeyFile>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
-    <AppxBundlePlatforms>x64|arm</AppxBundlePlatforms>
-    <PackageCertificateThumbprint>AB839B9879D0024EDD811BD92541667092CDDCB7</PackageCertificateThumbprint>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>8BB0B98BB6CC996E000B84C5B54BF59E365CA992</PackageCertificateThumbprint>
     <AppxBundle>Always</AppxBundle>
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
     <AppInstallerUpdateFrequency>1</AppInstallerUpdateFrequency>

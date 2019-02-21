@@ -69,18 +69,10 @@ namespace Simple3DGame
         private: ::Windows::UI::Xaml::Controls::TextBlock^ music_on;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ shader_type;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ TimeText;
-        private: ::Windows::UI::Xaml::Controls::Grid^ right_buttons;
-        private: ::Windows::UI::Xaml::Controls::Grid^ left_buttons;
         private: ::Windows::UI::Xaml::Controls::Grid^ optionsbox;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ textBlock;
         private: ::Windows::UI::Xaml::Controls::Image^ button_menu;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ title;
-        private: ::Windows::UI::Xaml::Controls::Image^ button_ab;
-        private: ::Windows::UI::Xaml::Controls::Image^ button_up;
-        private: ::Windows::UI::Xaml::Controls::Image^ button_down;
-        private: ::Windows::UI::Xaml::Controls::Image^ button_right;
-        private: ::Windows::UI::Xaml::Controls::Image^ button_left;
-        private: ::Windows::UI::Xaml::Controls::Image^ button_grab;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ points_box;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ rockets_box;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ rings_box;

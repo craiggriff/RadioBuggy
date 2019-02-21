@@ -231,134 +231,68 @@ void ::Simple3DGame::DirectXPage::Connect(int __connectionId, ::Platform::Object
         break;
     case 37:
         {
-            this->right_buttons = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
+            this->optionsbox = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
         }
         break;
     case 38:
         {
-            this->left_buttons = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
-        }
-        break;
-    case 39:
-        {
-            this->optionsbox = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
-        }
-        break;
-    case 40:
-        {
             this->textBlock = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 41:
+    case 39:
         {
             this->button_menu = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_menu))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_menu_PointerEntered);
         }
         break;
-    case 42:
+    case 40:
         {
             this->title = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 43:
-        {
-            this->button_ab = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
-            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_ab))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_ab_PointerPressed);
-            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_ab))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_ab_PointerReleased);
-        }
-        break;
-    case 44:
-        {
-            this->button_up = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
-            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_up))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_up_PointerPressed);
-            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_up))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_up_PointerReleased);
-            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_up))->PointerMoved += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_up_PointerMoved);
-        }
-        break;
-    case 45:
-        {
-            this->button_down = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
-            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_down))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_down_PointerPressed);
-            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_down))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_down_PointerReleased);
-        }
-        break;
-    case 46:
-        {
-            this->button_right = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
-            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_right))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_right_PointerPressed);
-            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_right))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_right_PointerReleased);
-        }
-        break;
-    case 47:
-        {
-            this->button_left = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
-            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_left))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_left_PointerPressed);
-            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_left))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_left_PointerReleased);
-        }
-        break;
-    case 48:
-        {
-            this->button_grab = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
-            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_grab))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_grab_PointerPressed);
-            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_grab))->PointerExited += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_grab_PointerReleased);
-        }
-        break;
-    case 49:
+    case 41:
         {
             this->points_box = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 50:
+    case 42:
         {
             this->rockets_box = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 51:
+    case 43:
         {
             this->rings_box = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 52:
+    case 44:
         {
             this->button_respot = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_respot))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_respot_PointerEntered);
         }
         break;
-    case 53:
+    case 45:
         {
             this->button_level_back = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_level_back))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_level_back_PointerPressed);
         }
         break;
-    case 54:
+    case 46:
         {
             this->button_for_back = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_for_back))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_level_for_PointerPressed);
         }
         break;
-    case 55:
+    case 47:
         {
             this->time_text = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 56:
+    case 48:
         {
             this->itempo_check = safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(this->itempo_check))->Checked += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
@@ -367,7 +301,7 @@ void ::Simple3DGame::DirectXPage::Connect(int __connectionId, ::Platform::Object
                 (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::itempo_check_Unchecked);
         }
         break;
-    case 57:
+    case 49:
         {
             this->cont_check = safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(this->cont_check))->Checked += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
@@ -376,7 +310,7 @@ void ::Simple3DGame::DirectXPage::Connect(int __connectionId, ::Platform::Object
                 (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::cont_check_Unchecked);
         }
         break;
-    case 58:
+    case 50:
         {
             this->grid_check = safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(this->grid_check))->Checked += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
@@ -385,7 +319,7 @@ void ::Simple3DGame::DirectXPage::Connect(int __connectionId, ::Platform::Object
                 (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::grid_check_Unchecked);
         }
         break;
-    case 59:
+    case 51:
         {
             this->cam_check = safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(this->cam_check))->Checked += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
@@ -394,7 +328,7 @@ void ::Simple3DGame::DirectXPage::Connect(int __connectionId, ::Platform::Object
                 (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::cam_check_Unchecked);
         }
         break;
-    case 60:
+    case 52:
         {
             this->ray_check = safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(this->ray_check))->Checked += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
@@ -403,7 +337,7 @@ void ::Simple3DGame::DirectXPage::Connect(int __connectionId, ::Platform::Object
                 (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::ray_check_Unchecked);
         }
         break;
-    case 61:
+    case 53:
         {
             this->rotate_check = safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(this->rotate_check))->Checked += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
@@ -412,7 +346,7 @@ void ::Simple3DGame::DirectXPage::Connect(int __connectionId, ::Platform::Object
                 (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::rotate_check_Unchecked);
         }
         break;
-    case 62:
+    case 54:
         {
             this->fix_height = safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(this->fix_height))->Checked += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
@@ -421,7 +355,7 @@ void ::Simple3DGame::DirectXPage::Connect(int __connectionId, ::Platform::Object
                 (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::fix_height_Unchecked);
         }
         break;
-    case 63:
+    case 55:
         {
             this->player_pos = safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(this->player_pos))->Checked += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
@@ -430,7 +364,7 @@ void ::Simple3DGame::DirectXPage::Connect(int __connectionId, ::Platform::Object
                 (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::player_pos_Unchecked);
         }
         break;
-    case 64:
+    case 56:
         {
             this->items_list = safe_cast<::Windows::UI::Xaml::Controls::ListView^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::ListView^>(this->items_list))->SelectionChanged += ref new ::Windows::UI::Xaml::Controls::SelectionChangedEventHandler(this, (void (::Simple3DGame::DirectXPage::*)
@@ -439,12 +373,12 @@ void ::Simple3DGame::DirectXPage::Connect(int __connectionId, ::Platform::Object
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::items_list_PointerPressed);
         }
         break;
-    case 66:
+    case 58:
         {
             this->high_score = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 67:
+    case 59:
         {
             this->start_box = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }

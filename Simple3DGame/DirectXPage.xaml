@@ -104,7 +104,7 @@
             </Grid>
 
 
-
+<!--
             <Grid Name="right_buttons" HorizontalAlignment="Right" Height="160" VerticalAlignment="bottom" Width="153">
                 <Image x:Name="button_right" HorizontalAlignment="Right" Height="70" VerticalAlignment="Bottom" Width="70" Source="Assets/arow.png" Opacity="0.2" PointerEntered="button_right_PointerPressed" PointerExited="button_right_PointerReleased"/>
                 <Image x:Name="button_left" HorizontalAlignment="Left" Height="70" VerticalAlignment="Bottom" Width="70" Source="Assets/arow.png" Opacity="0.2" RenderTransformOrigin="0.5,0.5" PointerEntered="button_left_PointerPressed" PointerExited="button_left_PointerReleased" >
@@ -129,7 +129,7 @@
                         <CompositeTransform Rotation="90"/>
                     </Image.RenderTransform>
                 </Image>
-            </Grid>
+            </Grid>-->
 
             <Grid HorizontalAlignment="left" Height="40" VerticalAlignment="top" Width="80" >
                 <StackPanel Orientation="Horizontal">
